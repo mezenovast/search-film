@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ajax</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="wrap">
+            <div class="logo">FilmSearch</div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="search">
+            <h2>Search:</h2>
+        </div>
+        <div class="form">
+            <div class="filter">
+                <legend><b>Title:</b></legend>
+                <input type="text" name="title" id="title">
+            </div>
+            <div class="filter">
+                <legend><b>Type:</b></legend>
+                <select name="select" id="type">
+                    <option value="movie">Movie</option>
+                    <option value="series">Series</option>
+                    <option value="episode">Episode</option>
+                </select>
+            </div>
+            <button class="button-search" id="button">Search</button>
+            <p id="error"></p>
+        </div>
+        <div class="container">
+            <h2 style="display: none;">Films</h2>
+            <div class="card_container">
+            </div>
+        </div>
+        <button class="button_show">Show more</button>
+    </div>
+
+    <div id="popup" class="popup">
+        <a href="##" class="popup_area"></a>
+        <div class="popup_body">
+            <div class="popup_content">
+                <img src="" alt="" id="img-info">
+                <ul>
+                    <li>
+                        <p class="information">Title:</p>
+                        <p class="title-info"></p>
+                    </li>
+                    <li>
+                        <p class="information">Released:</p>
+                        <p class="Released-info"></p>
+                    </li>
+                    <li>
+                        <p class="information">Genre:</p>
+                        <p class="Genre-info"></p>
+                    </li>
+                    <li>
+                        <p class="information">Country:</p>
+                        <p class="Country-info"></p>
+                    </li>
+                    <li>
+                        <p class="information">Director:</p>
+                        <p class="Director-info"></p>
+                    </li>
+                    <li>
+                        <p class="information">Writer:</p>
+                        <p class="Writer-info"></p>
+                    </li>
+                    <li>
+                        <p class="information">Actors:</p>
+                        <p class="Actors-info"></p>
+                    </li>
+                    <li>
+                        <p class="information">Awards:</p>
+                        <p class="Awards-info"></p>
+                    </li>
+                </ul>
+                <a href="##" class="popup_close">X</a>
+
+                <!-- двойной хэштэг в <href> для того, 
+                        чтобы при закрытии popup`а страница не проматывалась наверх, 
+                        а оставалась на том же месте -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="foot"> IT Academy STEP</div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+header, .footer {
+   padding: 20px;
+   background-color: #0A3140;
+}
+
+.logo {
+   font-size: 24px;
+   font-weight: bold;
+   color: #ffffff;
+}
+
+.foot {
+   text-align: right;
+   color: #ffffff;
+   font-weight: bold;
+}
+
+.main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 100%;
+   min-height: calc(100vh - 75px - 51px );
+   background-color: #f5ede0;
+}
+
+.form {
+   width: 400px;
+   border: 1px solid #0A3140;
+   text-align: center;
+   padding: 10px 25px;
+   border-radius: 10px;
+   margin: 20px 0;
+}
+
+#error {
+	font-size: 16px;
+	color: #c41b1b;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	color: #0A3140;
+}
+
+p:not(.information) {
+	word-break: break-all;
+}
+
+.search {
+   margin-top: 20px;
+}
+
+.filter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0px 20px 0px;
+}
+
+.wrapper {
+	width: 300px;
+   border-radius: 6px;
+   color: #0A3140;
+   padding: 10px;
+   margin: 20px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.poster {
+	width: 300px;
+	height: 400px;
+}
+
+.date_movie {
+	padding: 5px 0;
+	opacity: 80%;
+}
+
+.type_movie {
+	margin: 10px 0 0;
+	color: #b8743a;
+}
+
+.name_movie {
+	padding: 10px 0 5px;
+}
+
+/* стилизация кнопок и инпутов */
+
+input:not(#button),
+select {
+	box-sizing: border-box;
+	width: 255px;
+	height: 30px;
+	padding: 0px;
+	padding-left: 10px;
+	border-radius: 5px;
+	border-width: 1px;
+}
+
+#type {
+   padding: 5px;
+   border-radius: 6px;
+}
+
+.button, .button-search {
+   width: 100%;
+   padding: 10px 0;
+	margin: 10px 0;
+   background-color: #0A3140;
+   color: #F2E1C2;
+   font-weight: bold;
+   border-radius: 5px;
+   border: none;
+}
+
+.button_show {
+	width: 300px;
+	height: 40px;
+	margin: 20px;
+	border: 2px solid #345F65;
+	border-radius: 5px;
+	color: #345F65;
+	font-weight: bold;
+	display: none;
+}
+
+.button:hover, .button-search:hover, .button_show:hover {
+	cursor: pointer;
+   background-color: #0A3140;
+	color: #fff;
+}
+
+/*  */
+
+
+
+/* стилизация модального окна */
+
+ul {
+	list-style-type: none;
+	margin: 0px;
+}
+
+li {
+	display: flex;
+	padding: 5px 0;
+}
+
+.information {
+	width: 50px;
+	font-weight: 800;
+	margin-right: 80px;
+	margin-left: 20px;
+}
+
+#img-info {
+	width: 250px;
+	height: 350px;
+}
+
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: none;
+}
+
+.popup_area {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.popup_body {
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 10px;
+}
+
+.popup_content {
+	position: relative;
+	display: flex;
+	max-width: 700px;
+	margin: 15px auto;
+	padding: 25px;
+	border: 5px solid #345F65;
+	border-radius: 16px;
+	background-color: #fff;
+}
+
+.popup_close {
+	position: absolute;
+	right: 25px;
+	top: 15px;
+	color: black;
+	text-decoration: none;
+}
+
+.popup_close:hover {
+	color: #c41b1b;
+}
+
+/*  */
